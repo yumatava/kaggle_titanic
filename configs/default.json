@@ -1,0 +1,18 @@
+{
+    "features": [
+        "age",
+        "embarked",
+        "family_size",
+        "fare",
+        "pclass",
+        "sex"
+    ],
+    "params": {
+        "oob_score" : "True"
+    },
+    "loss": "multi_logloss",
+    "target_name": "Survived",
+    "ID_name": "PassengerId",
+    "experiment_name":"Titanic",
+    "model_name": "RandomForest"  
+}
