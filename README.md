@@ -80,5 +80,3 @@ flake8 .
 
 ## References
 - [ml-competition-template-titanic](https://github.com/upura/ml-competition-template-titanic)
-
-test
