@@ -7,6 +7,7 @@ data/*/*.zip
 features/*.feather
 features/*.parquet
 features/importances/*.png
+mlruns/*
 notebooks/*.ipynb
 
 # Created by https://www.gitignore.io/api/macos,python,jupyternotebook

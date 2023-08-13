@@ -8,7 +8,7 @@
         "sex"
     ],
     "params": {
-        "oob_score" : "True"
+        "oob_score" : true
     },
     "loss": "multi_logloss",
     "target_name": "Survived",
