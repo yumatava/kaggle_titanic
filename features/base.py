@@ -1,4 +1,5 @@
 import argparse
+import copy
 import inspect
 import re
 from abc import ABCMeta, abstractmethod
@@ -25,7 +26,8 @@ def get_arguments():
 
 
 def get_features(namespace):
-    for k, v in namespace.items():
+    namespace_copy = copy.copy(namespace)
+    for k, v in namespace_copy.items():
         if inspect.isclass(v) and issubclass(v, Feature) \
                 and not inspect.isabstract(v):
             yield v()
