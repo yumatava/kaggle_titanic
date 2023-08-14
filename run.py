@@ -32,7 +32,7 @@ score = cross_val_score(model, X_train_all, y_train_all, scoring='accuracy', cv=
 is_recorded = False  # TrueにするとMLflowにrunが記録
 run_id = None  # run_idを指定すると、runに結果が上書き
 
-if(is_recorded):
+if (is_recorded):
     print('This run is recorded.')
     mlflow.set_experiment(experiment_name)
     if not run_id:
