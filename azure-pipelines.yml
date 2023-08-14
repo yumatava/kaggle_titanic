@@ -10,8 +10,8 @@ pool:
   vmImage: ubuntu-latest
 strategy:
   matrix:
-    Python37:
-      python.version: '3.7'
+    Python311:
+      python.version: '3.11'
 
 steps:
 - task: UsePythonVersion@0
@@ -23,7 +23,6 @@ steps:
     python -m pip install --upgrade pip
     pip install -r requirements.txt
   displayName: 'Install dependencies'
-  condition: 
 
 - script: |
     flake8 .
