@@ -1,8 +1,6 @@
 import pathlib
 import json
 
-from kaggle.api.kaggle_api_extended import KaggleApi
-
 
 SUBMISSION_FILE_PATH = './data/output/sub.csv'
 MESSAGE = 'Auto-submission'
@@ -15,6 +13,8 @@ if not cred_path.exists():
     cred_path.parent.mkdir(exist_ok=True)
     cred_path.write_text(json.dumps(creds))
     cred_path.chmod(0o600)
+
+from kaggle.api.kaggle_api_extended import KaggleApi
 
 # Kaggle API
 api = KaggleApi()
